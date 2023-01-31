@@ -201,9 +201,6 @@ main .contactinfo{
     padding-left: 10px;
 }
 
-/* .contactus .message{
-    height: 80px;
-} */
 
 .contactus .message ::placeholder{
     /* padding-top: -20px; */
