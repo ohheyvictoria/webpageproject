@@ -406,7 +406,7 @@ margin-bottom: 70px;
 .wrapper{
     width: 1400px;
     height: auto;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
 }
     
     .cartleft{
