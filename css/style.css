@@ -175,22 +175,33 @@ main .contactinfo{
 	height: 40px;
     border-radius: 20px;
     border: none;
-}
-
-.contactus ::placeholder{
     font-family: 'Montserrat';
     padding-left: 10px;
 }
 
-.contactus .message{
-    height: 80px;
+.contactus ::placeholder{
+    /* font-family: 'Montserrat';
+    padding-left: 10px; */
 }
+
+.contactus textarea{
+    border-radius: 20px;
+    border: none;
+    padding-top: 10px;
+    font-family: 'Montserrat';
+    padding-left: 10px;
+}
+
+/* .contactus .message{
+    height: 80px;
+} */
 
 .contactus .message ::placeholder{
     /* padding-top: -20px; */
     /* padding: 30px 5px; */
     /* line-height: 30px!important; */
     /* line-height: 30px; */
+    /* position: relative; */
 
 }
 
@@ -283,17 +294,17 @@ main .contactinfo{
 /* this is for final version of howtoapply page  */
 
 .wrapper{
-width: 1400px;
-height: auto;
-/* border: blue 1px solid; */
+    width: 1400px;
+    height: auto;
+    /* border: blue 1px solid; */
 }
 
 .left{
-width: 690px;
-height: auto;
-/* border: red 1px solid; */
-float: left;
-margin-bottom: 70px;
+    width: 690px;
+    height: auto;
+    /* border: red 1px solid; */
+    float: left;
+    margin-bottom: 70px;
 }
 
 .left > div{
@@ -301,11 +312,11 @@ margin-bottom: 70px;
 }
 
 .right{
-width: 690px;
-height: auto;
-/* border: red 1px solid; */
-float: right;
-margin-bottom: 70px;
+    width: 690px;
+    height: auto;
+    /* border: red 1px solid; */
+    float: right;
+    margin-bottom: 70px;
 }
 
 .pinkbox{
@@ -345,10 +356,10 @@ margin-bottom: 70px;
     font-size: 50px;
 }
 .stepone .pcenter{
-  width: 120px;
-  height: auto;
-  /* border: black 1px solid; */
-  text-align: center;
+    width: 120px;
+    height: auto;
+    /* border: black 1px solid; */
+    text-align: center;
 }
 
 #steptwo{
@@ -409,7 +420,7 @@ margin-bottom: 70px;
     /* border: blue 1px solid; */
 }
     
-    .cartleft{
+.cartleft{
     width: 690px;
     height: auto;
     /* border: red 1px solid; */
@@ -427,7 +438,7 @@ margin-bottom: 70px;
     margin-bottom: 50px;
 }
       
-    .cartright{
+.cartright{
     width: 690px;
     height: auto;
     /* border: red 1px solid; */
