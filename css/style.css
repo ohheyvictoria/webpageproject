@@ -94,6 +94,7 @@ h3{
 .bottom .more li p{
     padding-bottom: 20px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .bottom .more li a{
@@ -151,6 +152,14 @@ main .contactinfo{
 
 .contactinfo p{
     margin-bottom: 20px;
+}
+
+.contactphone{
+    font-size: 20px;
+}
+
+.contactemail{
+    font-size: 20px;
 }
 
 .contactus{
@@ -372,6 +381,7 @@ main .contactinfo{
 
 .moreinfo{
     line-height: 1.5;
+    font-size: 20px;
 }
 
 #steptwo .pinkcircle{
@@ -471,10 +481,16 @@ main .contactinfo{
     float: left;
 }
 
+#cartaboveemail{
+    padding-left: -40px;
+    float: left;
+}
+
 .haveanaccount{
     text-decoration: none;
     color: black;
     font-size: 12px;
+    margin-left: 70px;
 }
 
 .smalltext{
@@ -486,4 +502,38 @@ input[type=checkbox] {
     transform: scale(.3);
     float: left;
     display: inline;
+}
+
+/* this is for news  */
+
+.newsmain{
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+
+.newsrow{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.img-container img{
+    height: 420px;
+    width: 420px;
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* color: #C2999B; */
+}
+
+.newstopics{
+    color: #C2999B;
 }
