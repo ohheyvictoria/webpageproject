@@ -11,6 +11,12 @@ h1{
     font-size: 80px;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 22px;
+}
+
 h3{
     font-family: 'Montserrat';
     font-size: 30px;
@@ -110,9 +116,12 @@ h3{
 /* this main is universal  */
 main{
     clear: both;
-    padding-left: 250px;
-    padding-right: 250px;
+    /* padding-left: 250px; */
+    /* padding-right: 250px; */
+    margin: 0 auto;
+    /* display: flex; */
 }
+
 
 /* this is for contact us */
 
@@ -294,6 +303,14 @@ main .contactinfo{
     color: #C2999B;
     float: right;
     font-size: 15px;
+}
+
+.loginwrapper{
+    /* clear: both; */
+    margin: 0 13%;
+    display: flex;
+    /* align-self: center; */
+    justify-content: space-between;
 }
 
 
@@ -506,25 +523,38 @@ input[type=checkbox] {
 .newsmain{
     font-family: 'Montserrat';
     font-weight:bold;
+    margin: 0 auto;
+    /* justify-content: center; */
+    /* text-align: center; */
 }
+/* .newsmain .banner{
+    width: 80%;
+} */
 
 .newsrow{
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
+    margin: 0 5%;
 }
 
+/* .img-container > img{
+    text-align: center;
+} */
 .img-container img{
-    height: 420px;
+    /* height: 420px; */
+    height: auto;
     width: 420px;
+    /* text-align: center; */
+    margin-top: 15px;
 }
 
-h4{
+.newsmain h4{
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-p{
+.newsmain p{
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
