@@ -13,15 +13,15 @@
 <body>
 
     <header>
-        <div class="top">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
-            <ul>
-                <li>
-                    <a href="#">Get Started <i class="fa-solid fa-angle-down"></i></a>
-                    <!-- <ol>
+        <div class="top grid">
+            <a class="item1" href="index.html"><img src="images/logo.png" alt=""></a>
+            <ul class="item2">
+                <li class="dropdown">
+                    <a class="dropbtn" href="#">Get Started <i class="fa-solid fa-angle-down"></i></a>
+                    <ol class="dropdown-content">
                         <li><a href="lashquiz.html">Lash Quiz</a></li>
                         <li><a href="howtoapply.html">How to Apply</a></li>
-                    </ol> -->
+                    </ol>
                 </li>
                 <li><a href="shopproducts.html">Shop All</a></li>
                 <li><a href="bridal.html">Bridal</a></li>
@@ -32,10 +32,140 @@
                 <li><a class="topicon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
-
     </header>
 
     <main>
+        <div class="wrapper no-flex grid-container">
+            
+            <div class="productsBanner">
+                <img src="images/sunsetbanner.png" alt="">
+            </div>
+
+            <div class="left-side">
+                <p>FILTERS</p>
+                <div class="line"></div>
+                <hr>
+                <p>COLLECTION</p>
+                <input type="checkbox" id="new" name="new" value="new">
+                <label for="new">NEW</label><br>
+                <input type="checkbox" id="lite" name="lite" value="lite">
+                <label for="lite">LITE</label><br>
+                <input type="checkbox" id="luxe" name="luxe" value="luxe">
+                <label for="luxe">LUXE</label><br>
+                <input type="checkbox" id="premium" name="premium" value="premium">
+                <label for="premium">PREMIUM</label><br>
+                <input type="checkbox" id="classic" name="classic" value="classic">
+                <label for="classic">CLASSIC</label><br>
+                <div class="line"></div>
+                <hr>
+                <p>STYLE</p>
+                <input type="checkbox" id="full volume" name="full volume" value="full volume">
+                <label for="full volume">FULL VOLUME</label><br>
+                <input type="checkbox" id="soft volume" name="soft volume" value="soft volume">
+                <label for="soft volume">SOFT VOLUME</label><br>
+                <input type="checkbox" id="natural" name="natural" value="natural">
+                <label for="natural">NATURAL</label><br>
+                <input type="checkbox" id="wispy" name="wispy" value="wispy">
+                <label for="wispy">WISPY</label><br>
+                <input type="checkbox" id="flare" name="flare" value="flare">
+                <label for="flare">FLARE</label><br>
+                <div class="line"></div>
+                <hr>
+                <p>OCCASION</p>
+                <input type="checkbox" id="zoom ready" name="zoom ready" value="zoom ready">
+                <label for="zoom ready">ZOOM READY</label><br>
+                <input type="checkbox" id="keep it natural" name="keep it natural" value="keep it natural">
+                <label for="keep it natural">KEEP IT NATURAL</label><br>
+                <input type="checkbox" id="weddings" name="weddings" value="weddings">
+                <label for="weddings">WEDDINGS</label><br>
+                <input type="checkbox" id="am to pm" name="am to pm" value="am to pm">
+                <label for="am to pm">AM TO PM</label><br>
+                <input type="checkbox" id="happiest hour" name="happiest hour" value="happiest hour">
+                <label for="happiest hour">HAPPIEST HOUR</label><br>
+            </div>
+
+            <div class="products">
+
+                <div class="row lashes">
+                    <div class="column lashes">
+                      <img src="./images/lashLimitless.png" alt="" style="width:100%">
+                      <p>LIMITLESS</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashBlessings.png" alt="" style="width:100%">
+                      <p>BLESSINGS</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashGoodKarma.png" alt="" style="width:100%">
+                      <p>GOOD KARMA</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/lashLoveLight.png" alt="" style="width:100%">
+                        <p>LOVE & LIGHT</p>
+                    </div>
+                </div>
+
+                <div class="row lashes">
+                    <div class="column lashes">
+                      <img src="./images/lashLunaLuxe.png" alt="" style="width:100%">
+                      <p>LUNA LUXE</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashstellaluxe.png" alt="" style="width:100%">
+                      <p>STELLA LUXE</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashMidnightLuxe.png" alt="" style="width:100%">
+                      <p>MIDNIGHT LUXE</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/lashiconicLuxe.png" alt="" style="width:100%">
+                        <p>ICONIC LUXE</p>
+                    </div>
+                </div>
+
+
+                <div class="row lashes">
+                    <div class="column lashes">
+                      <img src="./images/lashScarlet.png" alt="" style="width:100%">
+                      <p>SCARLET</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashBoudoir.png" alt="" style="width:100%">
+                      <p>BOUDOIR</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashJuliette.png" alt="" style="width:100%">
+                      <p>JULIETTE</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/lashAllura.png" alt="" style="width:100%">
+                        <p>ALLURA</p>
+                    </div>
+                </div>
+
+                <div class="row lashes">
+                    <div class="column lashes">
+                      <img src="./images/lashMonCheri.png" alt="" style="width:100%">
+                      <p>MON CHÉRI</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashSiren.png" alt="" style="width:100%">
+                      <p>SIREN</p>
+                    </div>
+                    <div class="column">
+                      <img src="./images/lashSirenDouble.png" alt="" style="width:100%">
+                      <p>SIREN DOUBLE</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/lashSirenFlare.png" alt="" style="width:100%">
+                        <p>SIREN FLARE</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
 
 
@@ -44,31 +174,42 @@
     </main>
 
     <footer>
-        <div class="bottom">
-            <img src="images/logo.png" alt="">
-            <ul class="more">
-                <li>
-                    <p>Help</p>
-                    <a href="contactus.html">Contact Us</a>
-                </li>
-                <li>
-                    <p>Members</p>
-                    <a href="login.html">Login</a>
-                </li>
-                <li id="instagram" class="socialmedia">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li class="socialmedia">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li class="socialmedia">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-            </ul>
+        <div class="bottom gridB">
+            <div>
+                <a class="item3" href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            
+            <div>  
+                <!-- middle -->
+                <ul class="more">
+                    <li>
+                        <p>Help</p>
+                        <a href="contactus.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <p>Members</p>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>   
+                 <!-- Right  -->
+                <ul class="more">
+                    <li id="instagram" class="socialmedia">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="socialmedia">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="socialmedia">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div> 
             
         </div>
-
-    </footer>
+    </footer> 
 
 </body>
 </html>

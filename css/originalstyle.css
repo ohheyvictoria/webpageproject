@@ -5,10 +5,18 @@ body{
     font-size: 20px;
     background-color: #F2F2F2;
 }
+
 h1{
     font-family: 'Oooh Baby';
     font-size: 80px;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 22px;
+}
+
 h3{
     font-family: 'Montserrat';
     font-size: 30px;
@@ -18,28 +26,23 @@ h3{
 
 /* top is for header  */
 
-header{
-    background: #FFFFFF;
-    /* border: 1px solid #000; */
-    padding-bottom: 20px;
-}
 .top{
     /* border: 3px solid blue; */
+    overflow: hidden;
     background-color: #FFFFFF;
     padding-bottom: 17px;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 40px;
 }
 .top img{
     float: left;
-    /* border: red 1px solid; */
+    padding-left: 250px;
 }
 .top ul{
-    display: flex;
+    float: right;
     padding-top: 37px;
+    padding-right: 250px;
 }
 .top li{
+    float: left;
     margin-left: 30px;
 }
 .top .topicon{
@@ -48,100 +51,65 @@ header{
 .top li a{
     text-decoration: none;
     color: black;
-    padding: 5px;
-    line-height: 1.5;
 }
-.top li a:hover{
-    color: #AAB8C4;
-}
-.top .dropdown{
-    position: relative;
-}
-.top .dropdown-content{
-    display: none;
+.top li a:hover{}
+
+/* ol{
     position: absolute;
-    background-color: #FFFFFF;
-    min-width: 190px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a{
-    padding: 20px;
-    line-height: 1.8;
-}
-.top .dropdown-content a:hover{
-    color: #AAB8C4;
-}
-.top .dropdown:hover .dropdown-content{
     display: block;
-}
-.top .dropdown:hover .dropbtn{
-    color: #AAB8C4;
-}
-/* .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px 22px;
+    width: 100%;
+    top: 100%;
+    left: 0;
 } */
-.top .item1{
-    grid-area: left;
-}
-.top .item2{
-    grid-area: menu;
-}
-.grid{
-    display: grid;
-    grid-template-areas: 
-    'left left menu menu menu';
-    gap: 100px;
-    /* gap: 40px 22px; */
-}
 
 /* bottom is for footer  */
 
-footer{
-    background: #fff;
-    /* border: 1px solid red; */
-}
 .bottom{
+    /* border: 3px solid blue; */
+    overflow: hidden;
     background-color: #FFFFFF;
-    height: 300px;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 40px;
-    /* border: 1px solid blue; */
-    padding-top: 80px;
-    margin-top: 20px;
+    margin-top: 90px;
+    height: 350px;
+
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
 }
 .bottom img{
-    /* border: 1px solid purple; */
+    float: left;
+    padding-left: 250px;
+    padding-top: 50px;
 }
+
 .bottom .more{
-    padding-top: 80px;
-    /* border: 1px solid teal; */
+    float: right;
+    padding-top: 150px;
+    padding-right: 250px;
 }
+
 .bottom .more li{
     float: left;
     margin-left: 50px;
 } 
+.bottom .more #instagram{
+    margin-left: 400px;
+}
+
 .bottom .more li p{
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 20px;
 }
+
 .bottom .more li a{
     text-decoration: none;
     color: black;
 }
+
 .bottom .more .socialmedia{
     font-size: 30px;
-}
-.bottom li a:hover{
-    color: #AAB8C4;
-}
-.gridB{
-    display: flex;
-    justify-content: space-between;
 }
 
 
@@ -347,45 +315,30 @@ main .contactinfo{
 
 
 /* this is for final version of howtoapply page  */
-/* this wrapper applies to cart as well */
-.wrapper{           
-    max-width: 1400px;
-    /* height: auto; */
-    border: blue 1px solid;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: 0 auto;
 
-    /* 
-    header and footer 
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 40px;
-    */
-} 
-
-.wrapper.-no-flex{
-    display: block;
+.wrapper{
+    width: 1400px;
+    height: auto;
+    /* border: blue 1px solid; */
 }
 
 .left{
-    max-width: 690px;
-    /* height: auto; */
-    border: red 1px solid;
-    /* float: left; */
+    width: 690px;
+    height: auto;
+    /* border: red 1px solid; */
+    float: left;
     margin-bottom: 70px;
 }
 
 .left > div{
-    /* float: right; */
+    float: right;
 }
 
 .right{
-    max-width: 690px;
-    /* height: auto; */
-    border: red 1px solid;
-    /* float: right; */
+    width: 690px;
+    height: auto;
+    /* border: red 1px solid; */
+    float: right;
     margin-bottom: 70px;
 }
 
@@ -484,24 +437,18 @@ main .contactinfo{
 }
 
 /* this is for cart page  */
-/* wrapper is shared with how to apply */
-.wrapper{
-    /* width: 1400px;
-    height: auto; */
-    /* border: blue 1px solid; */
-}
 
-.cartpage{
-    display: flex;
-    justify-content: space-between;
+.wrapper{
+    width: 1400px;
+    height: auto;
+    /* border: blue 1px solid; */
 }
     
 .cartleft{
-    max-width: 48%;
-    /* max-width: 690px; */
-    /* height: auto; */
-    border: red 1px solid;
-    /* float: left; */
+    width: 690px;
+    height: auto;
+    /* border: red 1px solid; */
+    float: left;
     margin-bottom: 70px;
 
     display: flex;
@@ -510,18 +457,16 @@ main .contactinfo{
 .mid{
     border-left: 2px solid #A7B2B8;
     height: 900px;
-    /* float: left; */
+    float: left;
     margin-top: 50px;
     margin-bottom: 50px;
 }
       
 .cartright{
-    max-width: 48%;
-    /* width: 690px; */
-    /* height: auto; */
-    /* height: 700px; */
-    border: red 1px solid;
-    /* float: right; */
+    width: 690px;
+    height: auto;
+    /* border: red 1px solid; */
+    float: right;
     margin-bottom: 70px;
 
     display: flex;
@@ -534,8 +479,7 @@ main .contactinfo{
     text-align: center; */
     
 #half{
-    max-width: 245px;
-    /* max-width: 50%; */
+    width: 245px;
 }
 
 .oneline{
@@ -580,7 +524,6 @@ input[type=checkbox] {
     font-family: 'Montserrat';
     font-weight:bold;
     margin: 0 auto;
-    /* display: flex; */
     /* justify-content: center; */
     /* text-align: center; */
 }
@@ -589,9 +532,9 @@ input[type=checkbox] {
 } */
 
 .newsrow{
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px; */
     margin: 0 5%;
 }
 
@@ -600,8 +543,8 @@ input[type=checkbox] {
 } */
 .img-container img{
     /* height: 420px; */
-    /* height: auto; */
-    max-width: 420px;
+    height: auto;
+    width: 420px;
     /* text-align: center; */
     margin-top: 15px;
 }
@@ -620,123 +563,4 @@ input[type=checkbox] {
 
 .newstopics{
     color: #C2999B;
-}
-.img-container p:nth-of-type(2):hover{
-    color: #C2999B;
-}
-
-/* bridal  */
-main .bridalBanner{
-    text-align: center;
-    /* padding-top: 60px; */
-    padding-bottom: 60px;
-    /* margin-bottom: 110px; */
-    justify-content: center;
-    /* background-image: images/BridalBanner.png; */
-}
-.bridalBanner{
-    /* background-image: "../images/BridalBanner.png"; */
-}
-.bridalBanner img{
-    height: auto;
-    max-width: 100%;
-}
-.bridalBanner h1{
-    /* text-align: center;
-    justify-content: center; */
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* .column{
-    float: left;
-    width: 16.66%;
-    padding: 5px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
-.row{
-    display: flex;
-    margin-bottom: 30px;
-}
-.column{
-    flex: 16.66%;
-    padding: 5px;
-    justify-content: space-between;
-}
-.column p{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* products  */
-.productsBanner img{
-    height: auto;
-    max-width: 100%;
-}
-.productsBanner{
-    grid-area: header;
-    margin-bottom: 50px;
-}
-.left-side{
-    grid-area: menu;
-    min-width: 150px;
-    /* background-color: red; */
-    margin-right: 50px;
-    text-align: left;
-    color: #AAB8C4;
-    /* font-weight: bold; */
-    /* padding-bottom: 12px; */
-    /* padding-right: 20px; */
-    line-height: 1.2;
-}
-.left-side p{
-    color: black;
-    font-weight: bold;
-}
-/* .checkbox{
-    font-weight: bold;
-} */
-.column .lashes{
-    flex: 25%;
-    padding: 5px;
-    justify-content: space-between;
-
-    grid-area: main;
-}
-.products{
-    
-}
-
-.grid-container{
-    display: grid;
-    grid-template-areas:
-      'header header header header header'
-      'menu main main main main'
-      'menu main main main main'
-      'menu main main main main'
-      'menu main main main main';
-    /* gap: 10px; */
-    /* background-color: #2196F3; */
-    /* padding: 10px; */
-  }
-/* 
-  .input{
-    padding-bottom: 52px;
-  } */
-
-  .line{
-    /* length: 50px; */
-    /* border-left: 2px solid #A7B2B8; */
-    /* height: 900px; */
-    /* float: left; */
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px; */
-}
-hr{
-    border-top: 1px solid #AAB8C4;
 }
